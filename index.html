@@ -190,16 +190,38 @@
         <section>
             <h2>Zeitgewinn</h2>
 
-            Zeitgewinn durch Benutzung eines Taschenrechners</caption>
+            <table>
+                <caption>Zeitgewinn durch Benutzung eines Taschenrechners</caption>
 
-            2-Stellen	3-Stellen	4-Stellen
-            Addition / Subtraktion		4			8			20
-            Multiplikation				15			45			240
-            Division											210
-            Modulo						5			20			65
-            Quersumme							1				2
-            Wurzelziehen				Kaum machbar von Hand
-            Potenzieren					25			75			550
+                <thead>
+                <tr>
+                    <th></th><th>2-Stellen</th><th>3-Stellen</th><th>4-Stellen</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>Addition / Subtraktion</th><td>4</td><td>8</td><td>20</td>
+                </tr>
+                <tr>
+                    <th>Multiplikation</th><td rowspan="2">15</td><td rowspan="2">45</td><td>240</td>
+                </tr>
+                <tr>
+                    <th>Division</th><!--<td>15</td><td>45</td>--><td>210</td>
+                </tr>
+                <tr>
+                    <th>Modulo</th><td>5</td><td>20</td><td>65</td>
+                </tr>
+                <tr>
+                    <th>Quersumme</th><td colspan="2">4</td><!--<td>8</td>--><td>2</td>
+                </tr>
+                <tr>
+                    <th>Wurzelziehen</th><td colspan="3">Kaum machbar von Hand</td><!--<td>8</td><td>20</td>-->
+                </tr>
+                <tr>
+                    <th>Potenzieren</th><td>25</td><td>75</td><td>550</td>
+                </tr>
+                </tbody>
+            </table>
 
             ../media/zeitgewinn.svg
 
