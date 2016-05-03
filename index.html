@@ -277,31 +277,69 @@
 
         <section>
         <h1>Neuen Autor registrieren</h1>
-        ------------------------
 
-        --Autor--
-        Herr X	Frau O
-        Name 			[          ]
-        E-Mail			[          ]
-        Webseite		[          ]
-        Geburtsdatum	[          ]
-        Nationalität	[ -- Wählen -- v]
-        Switzerland
-        Deutschland
-        Frankreich
-        Italien
-        Österreich
-        Profiltext		[          ]
-        Profilbilder	[ Browse ]
+            <!-- TODO check validation -->
+            <form>
+                <fieldset id="autorFieldSet">
+                    <legend>Autor</legend>
+                    <div>
+                    <label>Herr
+                        <input type="radio" name="gender" value="male"/>
+                    </label>
+                    <label>Frau
+                        <input type="radio" name="gender" value="female"/>
+                    </label>
+                    </div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email-address" required />
+                    </div>
+                    <div>
+                        <label for="website">Webseite</label>
+                        <input type="url" id="website" name="website-address" />
+                    </div>
+                    <div>
+                        <label for="birthdate">Geburtsdatum</label>
+                        <input type="date" id="birthdate" name="birthdate" required />
+                    </div>
+                    <div>
+                        <label for="nationalitaet">Nationalität</label>
+                        <select type="email" id="nationalitaet" name="nationalitaet" required>
+                            <option selected>--Wählen--</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="germany">Deutschland</option>
+                            <option value="france">Frankreich</option>
+                            <option value="italy">Italien</option>
+                            <option value="austria">Österreich</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="profile-desc">Name</label>
+                        <textarea type="email" id="profile-desc" name="profile-desc"></textarea>
+                    </div>
+                    <div>
+                        <label for="profile-image">Name</label>
+                        <input type="file" id="profile-image" name="profile-image" accept="image/*" required />
+                    </div>
+                </fieldset>
 
-        --Rechtliches--
-        [ ] Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin
-        [ ] Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin
-        [ ] Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
-        eingereichte Medien Bilder nicht manipuliert wurden
+                <fieldset id="rechtlichesFieldSet">
+                    <legend>Rechtliches</legend>
+                    <input type="checkbox" id="checkboxTextOriginator"/><label for="checkboxTextOriginator">Ich bestätige, das ich keine Texte veröffentlichen werde, deren Urheber ich nicht bin</label>
+                    <input type="checkbox" id="checkboxMediaOriginator"/><label for="checkboxMediaOriginator">Ich bestätige, das ich keine Medien veröffentlichen werden, deren Urheber ich nicht bin</label>
+                    <input type="checkbox" id="checkboxTruth"/><label for="checkboxTruth">Ich bestätige, das nur Texte veröffentlichen werde, die nach bestem Treu und glauben der Wahrheit entsprechen und
+                    eingereichte Medien Bilder nicht manipuliert wurden</label>
 
-        [Account anlegen]
-        [Eingaben zurücksetzen]
+                </fieldset>
+
+        <button type="submit">Account anlegen</button>
+        <button type="reset">Eingaben zurücksetzen</button>
+
+            </form>
         </section>
 
         <footer>
