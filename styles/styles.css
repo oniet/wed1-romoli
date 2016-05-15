@@ -14,14 +14,34 @@ body {
 	font-family: "URW Gothic L", "Helvetica", "Arial", sans-serif;
 }
 
+.clearfix:after {
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0px;
+}
 
+nav {
+	background-color: #F6F6F6;
+	border: 2px solid #0060A0;
+}
 
 /* images */
-
+header img {
+	float: left;
+	margin: 5px;
+}
 
 
 /* text */
 
+header h1 {
+	font-size: 50px;
+	background-color: #0060A0;
+	color: white;
+	line-height: 1.5em;
+}
 
 
 /* lists */
