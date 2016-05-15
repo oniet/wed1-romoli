@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<header>
-			<img src="../media/logo-wikipraktika.svg" />
+			<img src="../media/logo-wikipraktika.svg" alt=""/>
 			<h1>Wikipraktika</h1>
 		</header>
 
@@ -136,14 +136,14 @@
         <section>
             <h2>Bedienung des TI-Nspire CX CAS</h2>
             <video controls poster="../media/ti-nspire-cx-cas.png">
-                    <source src="../media/TI-Nspire CX CAS 3D Model.mp4" type="video/mp4">
-                    <source src="../media/TI-Nspire CX CAS 3D Model.webm" type="video/webm">
+                    <source src="../media/TI-Nspire%20CX%20CAS%203D%20Model.mp4" type="video/mp4">
+                    <source src="../media/TI-Nspire%20CX%20CAS%203D%20Model.webm" type="video/webm">
                     <track label="English" kind="subtitles" srclang="en" src="../media/ti-nspire-subtitles.en.vtt" default>
                     Your browser does not support the video tag.
             </video>
             <p><small>TI-Nspire CX CAS Demonstration</small></p>
 
-            <p>Von TheConnerdy, <a href=http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
+            <p>Von TheConnerdy, <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>,
             <a href="https://www.youtube.com/watch?v=6gKkz4VkSgk">via Youtube</a></p>
 
             <footer><small>Zuletzt geändert von Philipp Graf
@@ -279,7 +279,7 @@
 
 
         <section>
-        <h1>Neuen Autor registrieren</h1>
+        <h2>Neuen Autor registrieren</h2>
 
             <!-- TODO check validation -->
             <form>
@@ -311,8 +311,8 @@
                     </div>
                     <div>
                         <label for="nationalitaet">Nationalität</label>
-                        <select type="email" id="nationalitaet" name="nationalitaet" required>
-                            <option selected>--Wählen--</option>
+                        <select id="nationalitaet" name="nationalitaet" required>
+                            <option value="" selected>--Wählen--</option>
                             <option value="switzerland">Switzerland</option>
                             <option value="germany">Deutschland</option>
                             <option value="france">Frankreich</option>
@@ -322,7 +322,7 @@
                     </div>
                     <div>
                         <label for="profile-desc">Name</label>
-                        <textarea type="email" id="profile-desc" name="profile-desc"></textarea>
+                        <textarea id="profile-desc" name="profile-desc"></textarea>
                     </div>
                     <div>
                         <label for="profile-image">Name</label>
