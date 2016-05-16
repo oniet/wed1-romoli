@@ -22,9 +22,30 @@ body {
 	height: 0px;
 }
 
-nav {
+nav, main {
+	margin: 5px;
+}
+
+main {
+	padding: 10px;
+}
+
+nav dl {
 	background-color: #F6F6F6;
 	border: 2px solid #0060A0;
+	padding: 10px;
+}
+
+section > footer {
+	border: 1px dotted black;
+	font-style: italic;
+	clear: both;
+	margin: 1em 0;
+	padding: 2px;
+}
+
+section > footer .date {
+	float: right;
 }
 
 /* images */
@@ -33,20 +54,65 @@ header img {
 	margin: 5px;
 }
 
+figure {
+	width: 250px;
+	float: left;
+	margin: 10px 10px 10px 0;
+}
+
+figure img {
+	width: 100%;
+}
 
 /* text */
 
+h1, h2 {
+	margin: 1rem 0;
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
 header h1 {
-	font-size: 50px;
+	font-size: 3rem;
 	background-color: #0060A0;
 	color: white;
 	line-height: 1.5em;
 }
 
+nav > h1 {
+	font-size: 2rem;
+	margin: 10px;
+}
+
+section h1 {
+	border-bottom: 2px solid black;
+}
+
+section p {
+	margin-bottom: 1em;
+}
+
+figcaption {
+	color: #808080;
+}
+
 
 /* lists */
 
+dd {
+	margin-left: 1rem;
+}
 
+li {
+	margin-left: 2rem;
+}
 
 /* table */
 
