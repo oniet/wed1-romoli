@@ -172,7 +172,19 @@ legend {
 	margin: 0.5em;
 }
 
-input[type=text], input[type=email], input[type=url], input[type=file], input[type=date], select {
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=date],
+select,
+textarea {
+	width: 100%;
+	background-color: #F6F6F6;
+	border-style: none none solid none;
+	border-width: 1px;
+}
+
+input[type=file] {
 	width: 100%;
 }
 
@@ -180,8 +192,12 @@ input[type=text], input[type=email], input[type=url], input[type=file], input[ty
 	width: auto;
 }
 
-textarea {
+#rechtlichesFieldSet > div {
+	margin: 1em;
 	width: 100%;
+}
+
+textarea {
 	height: 5em;
 }
 
