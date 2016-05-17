@@ -28,6 +28,7 @@ nav, main {
 
 main {
 	padding: 10px;
+	counter-reset: h1counter;
 }
 
 nav dl {
@@ -46,6 +47,11 @@ section > footer {
 
 section > footer .date {
 	float: right;
+}
+
+iframe {
+	width: calc(50%);
+	height: auto;
 }
 
 /* images */
@@ -70,6 +76,12 @@ h1, h2 {
 	margin: 1rem 0;
 }
 
+section h1:before {
+	content: counter(h1counter);
+	counter-increment: h1counter;
+	margin-right: 0.5em;
+}
+
 h2 {
 	font-size: 1rem;
 }
@@ -79,21 +91,27 @@ a {
 	text-decoration: underline;
 }
 
-a[hreflang|=lang] {
-	padding-left: 1.2rem;
-	background-size: 1rem;
-	background-repeat: no-repeat;
+a:hover {
+	text-decoration: none;
 }
 
-a[hreflang=lang-en] {
+a[hreflang|=lang]:before {
+	background-size: 1em;
+	display: inline-block;
+	width: 1em;
+	height: 0.8em;
+	content: '';
+}
+
+a[hreflang=lang-en]:before {
 	background-image: url('../../media/flag-en.svg');
 }
 
-a[hreflang=lang-it] {
+a[hreflang=lang-it]:before {
 	background-image: url('../../media/flag-it.svg');
 }
 
-a[hreflang=lang-fr] {
+a[hreflang=lang-fr]:before {
 	background-image: url('../../media/flag-fr.svg');
 }
 
