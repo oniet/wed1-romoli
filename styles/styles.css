@@ -107,7 +107,7 @@ a:hover {
 	text-decoration: none;
 }
 
-a[hreflang|=lang]:before {
+a[hreflang]:before {
 	background-size: 1em;
 	display: inline-block;
 	width: 1em;
@@ -115,15 +115,15 @@ a[hreflang|=lang]:before {
 	content: '';
 }
 
-a[hreflang=lang-en]:before {
+a[hreflang=en]:before {
 	background-image: url('../../media/flag-en.svg');
 }
 
-a[hreflang=lang-it]:before {
+a[hreflang=it]:before {
 	background-image: url('../../media/flag-it.svg');
 }
 
-a[hreflang=lang-fr]:before {
+a[hreflang=fr]:before {
 	background-image: url('../../media/flag-fr.svg');
 }
 
