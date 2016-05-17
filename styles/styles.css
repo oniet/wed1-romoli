@@ -59,7 +59,7 @@ header img {
 	margin: 5px;
 }
 
-figure {
+figure.floating {
 	width: 250px;
 	float: left;
 	margin: 10px 10px 10px 0;
@@ -75,7 +75,7 @@ h1, h2 {
 	margin: 1rem 0;
 }
 
-section h1:before {
+section > h1:before {
 	content: counter(h1counter);
 	counter-increment: h1counter;
 	margin-right: 0.5em;
@@ -84,12 +84,11 @@ section h1:before {
 h3 {
 	color: #0060A0;
 	font-size: 1em;
-
 }
 
 
 h2 {
-	font-size: 1rem;
+	font-size: 1em;
 }
 
 a {
@@ -165,8 +164,26 @@ li {
 
 
 /* forms */
+legend {
+	margin-left: 0.2em;
+}
 
+#autorFieldSet > div {
+	margin: 0.5em;
+}
 
+input[type=text], input[type=email], input[type=url], input[type=file], input[type=date], select {
+	width: 100%;
+}
+
+#calculator-search {
+	width: auto;
+}
+
+textarea {
+	width: 100%;
+	height: 5em;
+}
 
 #font-size-form {
 	float: right;

@@ -61,7 +61,7 @@
                     können also etwa Gleichungen umstellen oder lösen.</p>
                 <p>Praktisch alle heutigen Taschenrechner verwenden elektronische Integrierte Schaltungen und
                     LC-Displays als Anzeige und werden von einer Batterie oder Solarzelle mit Strom versorgt.</p>
-                <figure>
+                <figure class="floating">
                     <!-- TODO add alt tags -->
                     <img src="../media/900px-SCM_Marchant_calculator.jpg" alt="SCM Marchant Calculator"/>
                     <figcaption>By <a href="commons.wikimedia.org/wiki/User:Bilby">Bilby</a> - Own work, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> https://commons.wikimedia.org/w/index.php?curid=10980797</figcaption>
@@ -247,7 +247,7 @@
                         src="https://www.youtube.com/embed/a7rcVgb41-0">
                 </iframe>
 
-                <p>iPhone Calculator Tricks  on YouTube: <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a></p>
+                <p><small>iPhone Calculator Tricks  on YouTube: <a href="https://www.youtube.com/watch?v=a7rcVgb41-0">youtube.com/watch?v=a7rcVgb41-0</a></small></p>
 
                 <footer>
                     <small>Zuletzt geändert von Paul Sarner</small>
@@ -263,7 +263,6 @@
                     <li>Casino TZZ</li>
                     <li>Casino Basic</li>
                 </ol>
-
                 <p>Am schlechtesten schnitten die Geräte von HG ab:</p>
                 <ol start="78" reversed>
                     <li>HG Productive</li>
@@ -290,7 +289,7 @@
                         <option value="HG Productive">HG Productive</option>
                         <option value="HG GO-ON">HG GO-ON</option>
                     </datalist>
-                    <input type="text" name="search-for" list="calculator-models" />
+                    <input id="calculator-search" type="text" name="search-for" list="calculator-models" />
                     <button>search</button>
                 </form>
             </section>
@@ -305,6 +304,8 @@
                         <label>Herr
                             <input type="radio" name="gender" value="male"/>
                         </label>
+                        </div>
+                        <div>
                         <label>Frau
                             <input type="radio" name="gender" value="female"/>
                         </label>
