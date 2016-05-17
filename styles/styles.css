@@ -92,6 +92,10 @@ figure.floating img {
 	width: 100%;
 }
 
+figure.floating figcaption {
+	word-wrap:break-word;
+}
+
 figure object[role=img] {
 	width: calc(33%);
 	margin-left: calc(33%);
