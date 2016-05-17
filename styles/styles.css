@@ -51,7 +51,6 @@ section > footer .date {
 
 iframe {
 	width: calc(50%);
-	height: auto;
 }
 
 /* images */
@@ -81,6 +80,13 @@ section h1:before {
 	counter-increment: h1counter;
 	margin-right: 0.5em;
 }
+
+h3 {
+	color: #0060A0;
+	font-size: 1em;
+
+}
+
 
 h2 {
 	font-size: 1rem;
@@ -139,6 +145,9 @@ figcaption {
 	color: #808080;
 }
 
+p > small {
+	color: grey;
+}
 
 /* lists */
 
@@ -148,6 +157,7 @@ dd {
 
 li {
 	margin-left: 2rem;
+	list-style: circle;
 }
 
 /* table */
