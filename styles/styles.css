@@ -49,8 +49,21 @@ section > footer .date {
 	float: right;
 }
 
-iframe {
+.youtube {
 	width: calc(50%);
+	height: 15em;
+}
+
+#calculator {
+	width: calc(50%);
+	height: 30em;
+}
+
+button {
+	background-color: #0060A0;
+	color: white;
+	padding: 5px;
+	border-radius: 0.5em;
 }
 
 /* images */
@@ -65,8 +78,18 @@ figure.floating {
 	margin: 10px 10px 10px 0;
 }
 
-figure img {
+figure.floating img {
 	width: 100%;
+}
+
+figure object[role=img] {
+	width: calc(33%);
+	margin-left: calc(33%);
+	margin-right: calc(33%);
+}
+
+button > img {
+	width: 1em;
 }
 
 /* text */
