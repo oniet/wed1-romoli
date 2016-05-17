@@ -79,6 +79,24 @@ a {
 	text-decoration: underline;
 }
 
+a[hreflang|=lang] {
+	padding-left: 1.2rem;
+	background-size: 1rem;
+	background-repeat: no-repeat;
+}
+
+a[hreflang=lang-en] {
+	background-image: url('../../media/flag-en.svg');
+}
+
+a[hreflang=lang-it] {
+	background-image: url('../../media/flag-it.svg');
+}
+
+a[hreflang=lang-fr] {
+	background-image: url('../../media/flag-fr.svg');
+}
+
 header h1 {
 	font-size: 3rem;
 	background-color: #0060A0;
