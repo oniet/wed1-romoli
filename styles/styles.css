@@ -66,6 +66,16 @@ button {
 	border-radius: 0.5em;
 }
 
+body > footer {
+	background-color: #0060A0;
+	color: white;
+	padding: 10px;
+}
+
+body > footer a {
+	color: white;
+}
+
 /* images */
 header img {
 	float: left;
@@ -235,7 +245,9 @@ textarea {
 	width: 100%;
 	background-color: #F6F6F6;
 	border-style: none none solid none;
+	border-color: black;
 	border-width: 1px;
+	line-height: 2em;
 }
 
 input[type=file] {
