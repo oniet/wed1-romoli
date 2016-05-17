@@ -71,29 +71,13 @@ figure img {
 
 /* text */
 
-h1, h2 {
-	margin: 1rem 0;
-}
-
-section > h1:before {
-	content: counter(h1counter);
-	counter-increment: h1counter;
-	margin-right: 0.5em;
-}
-
-h3 {
-	color: #0060A0;
-	font-size: 1em;
-}
-
-
-h2 {
-	font-size: 1em;
-}
-
 a {
-	color: black;
 	text-decoration: underline;
+	color: black;
+}
+
+nav a {
+	color: blue;
 }
 
 a:hover {
@@ -120,6 +104,28 @@ a[hreflang=lang-fr]:before {
 	background-image: url('../../media/flag-fr.svg');
 }
 
+figcaption {
+	color: #808080;
+}
+
+h1, h2 {
+	margin: 1rem 0;
+}
+
+section > h1:before {
+	content: counter(h1counter);
+	counter-increment: h1counter;
+	margin-right: 0.5em;
+}
+
+h3 {
+	color: #0060A0;
+	font-size: 1em;
+}
+h2 {
+	font-size: 1em;
+}
+
 header h1 {
 	font-size: 3rem;
 	background-color: #0060A0;
@@ -136,32 +142,57 @@ section h1 {
 	border-bottom: 2px solid black;
 }
 
+p {
+	margin-top: 1em;
+}
+
 section p {
 	margin-bottom: 1em;
-}
-
-figcaption {
-	color: #808080;
-}
-
-p > small {
-	color: grey;
 }
 
 /* lists */
 
 dd {
-	margin-left: 1rem;
+	margin-left: 1em;
 }
 
 li {
-	margin-left: 2rem;
+	margin-left: 2em;
+}
+
+ul > li {
 	list-style: circle;
 }
 
 /* table */
+table {
+	display: table;
+	border-collapse: collapse;
+	width: 100%;
+}
 
+tr {
+	border-top: 0.1em solid black;
+	height: 2em;
+}
 
+thead > tr {
+	background-color: #0060A0;
+	color: white;
+	border-style: solid none solid none;
+}
+
+table tr:nth-child(2n) {
+	background-color: lightblue;
+}
+
+td {
+	text-align: center;
+}
+
+tr *:nth-child(1) {
+	text-align: left;
+}
 
 /* forms */
 legend {
