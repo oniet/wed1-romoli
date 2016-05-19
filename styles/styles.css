@@ -50,13 +50,15 @@ section > footer .date {
 }
 
 .youtube {
-	width: calc(50%);
-	height: 15em;
+	width: 100%;
+	height: calc(56vw - 30px);
 }
 
 #calculator {
-	width: calc(50%);
-	height: 30em;
+	max-width: 500px;
+	max-height: 540px;
+	height: calc(108vw - 30px);
+	width: 100%;
 }
 
 button {
