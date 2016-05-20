@@ -6,10 +6,12 @@ var calculator = new function(){
     var register = "";
     var result = 0; /* Result register, contains also inserted numbers */
     var operator = "";
+    var isResult = false;
 
     this.clear = function(){
         operator = register = "";
         result = 0;
+        isResult = false;
     };
 
     this.getRegister = function(){
@@ -25,7 +27,8 @@ var calculator = new function(){
     };
 
     this.performCalculation = function(){
-        if(operator === "" || typeof(register) === Number){
+        isResult = true;
+        if(operator === "" || typeof(register) !== "number"){
             register = "Invalid calculation";
             return;
         }
@@ -47,13 +50,19 @@ var calculator = new function(){
     };
 
     this.enterNumber = function(num){
+        if(isResult){
+            this.clear();
+        }
         result = result * 10 + Number(num);
     };
 
     function setRegister(){
+        if(Number(register) > 0){
+            return;
+        }
         register = result;
         result = 0;
-        // TODO fix that not only operator change shifts register.
+        isResult = false;
     }
 
     this.enterOperatorAdd = function(){
