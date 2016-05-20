@@ -116,7 +116,7 @@ a {
 }
 
 nav a {
-	color: blue;
+	color: #0060A0;
 }
 
 a:hover {
@@ -166,10 +166,11 @@ h2 {
 }
 
 header h1 {
-	font-size: 3rem;
+	font-size: 48px;
 	background-color: #0060A0;
 	color: white;
 	line-height: 1.5em;
+	margin: 0;
 }
 
 nav > h1 {
