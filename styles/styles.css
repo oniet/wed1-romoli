@@ -161,10 +161,6 @@ section > header > h1:before {
 	margin-right: 0.5em;
 }
 
-h3 {
-	color: #0060A0;
-	font-size: 1em;
-}
 h2 {
 	font-size: 1em;
 }
@@ -196,6 +192,11 @@ section p {
 
 /* lists */
 
+dt {
+	color: #0060A0;
+	font-weight: bold;
+}
+
 dd {
 	margin-left: 1em;
 }
@@ -204,7 +205,8 @@ li {
 	margin-left: 2em;
 }
 
-ul > li {
+main dd {
+	display: list-item;
 	list-style: circle;
 }
 
