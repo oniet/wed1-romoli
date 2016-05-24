@@ -257,6 +257,12 @@ textarea {
 	line-height: 2em;
 }
 
+input:focus {
+	color: #0060A0;
+	border-color: #0060A0;
+	border-width: 2px;
+}
+
 input[type=file] {
 	width: 100%;
 }
