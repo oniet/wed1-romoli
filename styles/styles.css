@@ -19,7 +19,7 @@ body {
 	clear: both;
 	display: block;
 	visibility: hidden;
-	height: 0px;
+	height: 0;
 }
 
 nav, main {
@@ -212,7 +212,7 @@ table {
 }
 
 tr {
-	border-top: 0.1em solid black;
+	border-top: 1px solid #D3E0EC;
 	height: 2em;
 }
 
@@ -220,10 +220,12 @@ thead > tr {
 	background-color: #0060A0;
 	color: white;
 	border-style: solid none solid none;
+	border-color: black;
+	border-width: 2px;
 }
 
 table tr:nth-child(2n) {
-	background-color: lightblue;
+	background-color: #DBE6EF;
 }
 
 td {
@@ -239,8 +241,14 @@ legend {
 	margin-left: 0.2em;
 }
 
-#autorFieldSet > div {
+fieldset > div {
 	margin: 0.5em;
+}
+
+input:not([type=radio]):not([type=checkbox]):not(#calculator-search),
+select,
+textarea {
+	width: 100%;
 }
 
 input[type=text],
@@ -249,7 +257,6 @@ input[type=url],
 input[type=date],
 select,
 textarea {
-	width: 100%;
 	background-color: #F6F6F6;
 	border-style: none none solid none;
 	border-color: black;
@@ -257,23 +264,15 @@ textarea {
 	line-height: 2em;
 }
 
-input:focus {
+input[type=checkbox] {
+	margin-right: 0.5em;
+}
+
+input:focus,
+textarea:focus {
 	color: #0060A0;
 	border-color: #0060A0;
 	border-width: 2px;
-}
-
-input[type=file] {
-	width: 100%;
-}
-
-#calculator-search {
-	width: auto;
-}
-
-#rechtlichesFieldSet > div {
-	margin: 1em;
-	width: 100%;
 }
 
 textarea {
