@@ -174,7 +174,7 @@ body > header h1 {
 }
 
 nav > h1 {
-	font-size: 2rem;
+	font-size: 2em;
 	margin: 10px;
 }
 
@@ -193,7 +193,6 @@ section p {
 /* lists */
 
 dt {
-	color: #0060A0;
 	font-weight: bold;
 }
 
@@ -203,6 +202,10 @@ dd {
 
 li {
 	margin-left: 2em;
+}
+
+main dt {
+	color: #0060A0;
 }
 
 main dd {
