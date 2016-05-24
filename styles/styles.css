@@ -37,7 +37,7 @@ nav dl {
 	padding: 10px;
 }
 
-section > footer {
+section > footer.authorinfo {
 	border: 1px dotted black;
 	font-style: italic;
 	clear: both;
@@ -68,6 +68,10 @@ button {
 	border-radius: 0.5em;
 }
 
+button:hover {
+	color: #808080;
+}
+
 body > footer {
 	background-color: #0060A0;
 	color: white;
@@ -79,7 +83,7 @@ body > footer a {
 }
 
 /* images */
-header img {
+body > header img {
 	float: left;
 	margin: 5px;
 }
@@ -151,7 +155,7 @@ h1, h2 {
 	margin: 1rem 0;
 }
 
-section > h1:before {
+section > header > h1:before {
 	content: counter(h1counter);
 	counter-increment: h1counter;
 	margin-right: 0.5em;
@@ -165,7 +169,7 @@ h2 {
 	font-size: 1em;
 }
 
-header h1 {
+body > header h1 {
 	font-size: 48px;
 	background-color: #0060A0;
 	color: white;
